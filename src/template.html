@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1>To Do List ✔️</h1>
+      <h4>📍 Today</h4>
+      <h3>Projects</h3>
+      <ul></ul>
+      <button id="newProject" value="All">New Project</button>
+      <dialog class="projectDialog">
+        <form action="submit" id="Project">
+          <input
+            type="text"
+            id="NewProjectImput"
+            required
+            placeholder="New Project"
+          />
+          <button type="submit" class="accept">Accept</button>
+          <button type="button" class="cancel">Cancel</button>
+        </form>
+      </dialog>
+    </div>
+    <div class="mainContent">
+      <button class="burger">x</button>
+      <button class="newToDo">+ Add Task</button>
+      <dialog class="newTodoDialog">
+        <form action="submit" class="createTask">
+          <input type="text" class="title" required placeholder="Name" />
+          <textarea
+            name="description"
+            class="description"
+            cols="20"
+            rows="2"
+            placeholder="Description"
+          ></textarea>
+          <br />
+          <label
+            >Due Date: <input type="date" class="date" required /> <br />
+          </label>
+          <button type="submit">Add</button>
+          <button class="close" type="button">Cancel</button>
+        </form>
+      </dialog>
+    </div>
+  </body>
+</html>
