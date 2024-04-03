@@ -1,2 +1,2 @@
-# To-Do-List
-Live preview:  https://lmcygnus.github.io/To-Do-List/
+# Weather App
+Live preview:  https://lmcygnus.github.io/Weather-App/
