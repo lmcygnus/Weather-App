@@ -1,10 +1,10 @@
-/* eslint-disable no-alert */
 /* eslint-disable no-console */
 import './style.css';
 
 const processData = (data) => {
   const city = document.querySelector('.city');
   city.textContent = `${data.location.name}, ${data.location.country}`;
+
   const text = document.querySelector('.text');
   text.textContent = data.current.condition.text;
 
@@ -46,5 +46,6 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   searchLocation();
+  document.querySelector('.inf').style.display = 'block';
   form.reset();
 });
