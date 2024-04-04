@@ -10,4 +10,7 @@ body {
 
 input {
   width: 40%;
+  border-radius: 20px;
+  padding: 5px;
+  border: 2px solid var(--main-color);
 }
