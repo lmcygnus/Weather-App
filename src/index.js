@@ -30,8 +30,10 @@ async function getData(city) {
     const data = await response.json();
     console.log(data);
     processData(data);
-  } catch (error) {
-    alert(error);
+  } catch (err) {
+    const inf = document.querySelector('.inf');
+    inf.textContent = 'Location does not exist';
+    console.log(err);
   }
 }
 
